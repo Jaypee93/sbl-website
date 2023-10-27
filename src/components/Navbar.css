@@ -1,0 +1,48 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+ 
+.navbarcountries-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 80px;
+    background-color: red;
+    overflow-x: scroll;
+    white-space: nowrap;
+    
+}
+
+
+.navbarinfo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4vh;
+    gap: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+}
+
+.navbar-logo {
+    height: 12vh;
+}
+
+.navbar-countrytext {
+    font-size: 12px;
+}
