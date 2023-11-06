@@ -4,35 +4,16 @@ import axios from "axios";
 import "./Homepage.css";
 import Navbar from "./Navbar";
 import Navbarteams from "./NavbarTeams";
+import TeamPage from "./TeamPage";
 
 const Homepage= ()  => {
   const [swedenData, setSwedenData] = useState(null);
   const [leagues, setLeagues] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const options = {
-        method: "GET",
-        url: "https://api-basketball.p.rapidapi.com/leagues",
-        headers: {
-          "X-RapidAPI-Key": import.meta.env.VITE_CLIENT_ID,
-          "X-RapidAPI-Host": import.meta.env.VITE_RAPID_API_HOST,
-        },
-      };
-
-      try {
-        const response = await axios.request(options);
-        setLeagues(response.data.response); // Set leagues in state
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
-  }, []);
 
   return (
         <div className="homepage-container">
+          <TeamPage/>
                 <Navbar/>
                 <Navbarteams />
           {/* <div className="leagues-container">

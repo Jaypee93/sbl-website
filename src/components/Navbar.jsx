@@ -1,32 +1,25 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
-import "./Navbar.css";
+import React, { useState, useEffect } from "react";
+import fetchData from "../api";
+import "./Navbar.css"
 
 const Navbar = () => {
-  const [swedenData, setSwedenData] = useState(null);
   const [leagues, setLeagues] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const options = {
-        method: "GET",
-        url: "https://api-basketball.p.rapidapi.com/leagues",
-        headers: {
-          "X-RapidAPI-Key": import.meta.env.VITE_CLIENT_ID,
-          "X-RapidAPI-Host": import.meta.env.VITE_RAPID_API_HOST,
-        },
-      };
-
+    const fetchLeaguesData = async () => {
       try {
-        const response = await axios.request(options);
-        setLeagues(response.data.response); // Set leagues in state
+        const response = await fetchData("leagues");
+        if (response && response.response) {
+          setLeagues(response.response);
+        }
       } catch (error) {
         console.error(error);
       }
     };
-
-    fetchData();
+  
+    fetchLeaguesData();
   }, []);
+  
 
   return (
     <div>
@@ -53,10 +46,10 @@ const Navbar = () => {
           }
         })}
         <div className="navbar-standings">
-          Standings
+          <p>Standings</p>
         </div>
         <div className="navbar-search">
-          Search
+          <p>Search</p>
         </div>
       </div>
     </div>
