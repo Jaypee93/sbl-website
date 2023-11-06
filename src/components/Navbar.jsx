@@ -31,7 +31,7 @@ const Navbar = () => {
           <p>Games</p>
         </div>
         {leagues.map((league) => {
-          if (league.id === 93) {
+          if (league.id === 93) { 
             return (
               <div key={league.id}>
                 <img

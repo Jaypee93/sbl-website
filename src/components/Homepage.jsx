@@ -7,8 +7,7 @@ import Navbarteams from "./NavbarTeams";
 import TeamPage from "./TeamPage";
 
 const Homepage= ()  => {
-  const [swedenData, setSwedenData] = useState(null);
-  const [leagues, setLeagues] = useState([]);
+
 
 
   return (

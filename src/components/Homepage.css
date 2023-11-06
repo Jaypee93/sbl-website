@@ -1,0 +1,8 @@
+.homepage-container {
+    background-image: url('../assets/alexsbl2.png');
+    background-size: 100% 80vh;
+    position: sticky;
+    height: 80vh;
+    width: 100vw;
+    max-width: none;
+}
