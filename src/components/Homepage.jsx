@@ -5,16 +5,16 @@ import "./Homepage.css";
 import Navbar from "./Navbar";
 import Navbarteams from "./NavbarTeams";
 import TeamPage from "./TeamPage";
+import Cards from "./Cards";
 
 const Homepage= ()  => {
-
-
 
   return (
         <div className="homepage-container">
           <TeamPage/>
                 <Navbar/>
                 <Navbarteams />
+                <Cards />
           {/* <div className="leagues-container">
             {leagues.map((league) => {
               if (league.id === 93) {
