@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Homepage.css";
@@ -6,16 +5,17 @@ import Navbar from "./Navbar";
 import Navbarteams from "./NavbarTeams";
 import TeamPage from "./TeamPage";
 import Cards from "./Cards";
+import alex from "../assets/alexsbl2.png";
 
-const Homepage= ()  => {
-
+const Homepage = () => {
   return (
-        <div className="homepage-container">
-          <TeamPage/>
-                <Navbar/>
-                <Navbarteams />
-                <Cards />
-          {/* <div className="leagues-container">
+    <div className="homepage-container">
+      <TeamPage />
+      <Navbar />
+      <Navbarteams />
+      <img style={{ width: "100%", minHeight: "100%" }} src={alex} alt="" />
+      <Cards />
+      {/* <div className="leagues-container">
             {leagues.map((league) => {
               if (league.id === 93) {
                 return (
@@ -32,9 +32,8 @@ const Homepage= ()  => {
               }
             })}
           </div> */}
-        </div>
-      );
-
-}
+    </div>
+  );
+};
 
 export default Homepage;

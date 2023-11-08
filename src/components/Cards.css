@@ -13,12 +13,18 @@
     width: 330px;
     height: 490px;
     cursor: pointer;
+    /* background-color: white; */
+    opacity: 90%;
     border-radius: 10px;
     background-image: url('../assets/powCard.png');
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+
+.Card:hover {
+    opacity: 100%;
 }
 
 .playerOfTheWeek {
@@ -34,6 +40,14 @@
     font-weight: 700;
 }
 
+.powStats {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
 .powName {
     font-family: 'Edu TAS Beginner', Arial, sans-serif;
 }
+
