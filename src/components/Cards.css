@@ -12,6 +12,7 @@
 .Card {
     width: 330px;
     height: 490px;
+    padding: 30px;
     cursor: pointer;
     /* background-color: white; */
     opacity: 90%;
@@ -43,11 +44,17 @@
 .powStats {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;    
+    font-family: 'Edu TAS Beginner', 'cursive';
+    font-weight: 700;
+    font-size: large;
+    width: 60%;
 }
 
 .powName {
     font-family: 'Edu TAS Beginner', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
 }
 

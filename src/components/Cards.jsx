@@ -34,12 +34,12 @@ const Cards = () => {
                     </div>
                 </div>
 
-                <div className="powName"></div>
+                <div className="powName">Gustav Hansson</div>
             </div>
         </div>
         <div className='Card'>
             <div className="sblPodden">
-
+                <img src="" alt="" />
             </div>
         </div>
         <div className='Card'>
