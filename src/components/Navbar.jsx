@@ -30,6 +30,9 @@ const Navbar = () => {
         <div className="navbar-games">
           <p>Games</p>
         </div>
+        <div className="navbar-stats">
+          <p>Stats</p>
+        </div>
         {leagues.map((league) => {
           if (league.id === 93) { 
             return (
@@ -47,6 +50,9 @@ const Navbar = () => {
         })}
         <div className="navbar-standings">
           <p>Standings</p>
+        </div>
+        <div className="navbar-stream">
+          <a href="https://livesport.expressen.se/basket">Streama Matcher</a>
         </div>
         <div className="navbar-search">
           <p>Search</p>
